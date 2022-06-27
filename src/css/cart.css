@@ -1,0 +1,157 @@
+.cartSection {
+    width: 100vw;
+    height: 90vh;
+    overflow: auto;
+}
+
+.cartProducts {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.cartItem {
+    width: 75%;
+    height: 30vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 20px;
+}
+
+.cartItem ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.cartItem li {
+    border: 1px solid #a6a6a6;
+    margin-left: 5px;
+    padding: 10px;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.cartItem li:hover {
+    background-color: black;
+    color: white;
+}
+
+.cartItem .selectedAttr {
+    background-color: black !important;
+    color: white !important;
+}
+
+.sectionRight,
+.sectionLeft {
+    width: 33%;
+    height: 100%;
+}
+
+.sectionLeft {
+    overflow-y: auto;
+    width: 60%;
+}
+
+.sectionLeft .cartSelectedAttr {
+    padding: 3px;
+    color: white;
+    background-color: black;
+    margin-top: 5px;
+}
+
+.sectionLeft h2 {
+    margin: 5px;
+}
+
+.sectionLeft h3 {
+    margin: 5px 5px 10px 5px;
+}
+
+.sectionRight {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.sectionRight img {
+    width: 70%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.sectionRight .qtyControls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.incButton,
+.decButton {
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid #a6a6a6;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.incButton:hover,
+.decButton:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .cartItem {
+        width: 95%;
+        height: 25vh;
+    }
+
+    .cartItem h2 {
+        font-size: 16px;
+    }
+
+    .cartItem .sectionLeft .attributeListItems {
+        padding: 3px !important;
+    }
+
+    .cartItem .sectionRight span {
+        padding: 2px 5px;
+    }
+}

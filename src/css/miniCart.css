@@ -1,0 +1,165 @@
+.cartModule {
+    width: 25vw;
+    height: 75vh;
+    background-color: white;
+    position: absolute;
+    z-index: 9999;
+    top: 70px;
+    right: 15%;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    border-radius: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.cartModule h2 {
+    display: none;
+}
+
+.cartModule .miniCartItems .cartSection {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.cartModule .miniCartItems .cartProducts {
+    width: 100% !important;
+    display: block !important;
+}
+
+.miniCartItems {
+    height: 70%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.miniCartOptions {
+    height: 30%;
+    width: 100%;
+}
+
+.totalPrice {
+    height: 40%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.miniCartButtons {
+    height: 60%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.miniCartButtons button,
+.miniCartButtons a {
+    padding: 12px 25px;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.miniCartButtons a {
+    background-color: white;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.miniCartButtons a:hover {
+    background-color: black;
+    color: white;
+}
+
+.miniCartButtons button:last-child {
+    border: 2px solid #58e984;
+    background-color: #58e984;
+    color: white;
+}
+
+.miniCartButtons button:last-child:hover {
+    color: #58e984;
+    background-color: white;
+}
+
+.totalPrice h3 {
+    font-weight: 300;
+}
+
+.miniCartProducts .cartItem {
+    width: 100%;
+    height: 20vh;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.miniCartProducts .sectionLeft {
+    font-size: 12px;
+    width: 55%;
+}
+
+.miniCartProducts .sectionRight {
+    font-size: 12px;
+    width: 45%;
+}
+
+.miniCartProducts .sectionLeft ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.miniCartProducts .sectionLeft ul li {
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.miniCartProducts .sectionLeft .selectedAttr {
+    padding: 3px !important;
+    background-color: silver !important;
+}
+
+.miniCartProducts .sectionRight span:nth-child(2) {
+    border: none !important;
+}
+
+.miniCartProducts .sectionRight span {
+    padding: 0px 5px;
+    border: 1px solid black;
+}
+
+.miniCartWrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh !important;
+    left: 0%;
+    top: 0%;
+    height: 0%;
+    background-color: #80808080;
+    z-index: 999;
+}
+
+@media (max-width: 600px) {
+    .cartModule {
+        display: none !important;
+    }
+}
